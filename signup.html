@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <title>Smart Login System</title>
+  </head>
+  <body>
+    <div class="container mx-auto my-5 text-center">
+      <div class="group m-auto w-75 p-5">
+        <h1 class="text-info mb-4">Smart Login System</h1>
+
+        <input class="form-control mb-4" type="text" required placeholder="Enter your Name" id="userNameInput" />
+        <p id="userNameAlert" class="d-none text-danger">include at least 3 capital letters</p>
+        <input class="form-control mb-4" type="email" required placeholder="Enter your Email" id="userEmailInput" />
+        <p id="userEmailAlert" class="d-none text-danger">name@example.com</p>
+        <input class="form-control mb-4" type="password"required placeholder="Enter your Password" id="userPasswordInput" />
+        <p id="userPasswordAlert" class="d-none text-danger m-0" >you must strengthen your password from 5 to 15</p>
+
+        <p class="text-success d-none" id="confirmMsg">success</p>
+        <p class="text-danger d-none mb-0" id="accountExistMsg">this account exists! Try anouther one</p>
+        <p class="text-danger d-none mb-0" id="tryAgainMsg">signUp failed! Try again</p>
+
+        <div class="text-center" id="message"></div>
+
+        <a id="signUpBtn" onclick="signUp()" class="btn btn-outline-info w-100 mb-3 mt-4 text-decoration-none">sign up</a>
+        <p class="text-dark mt-3">have an account?</p>
+        <a class="text-dark text-decoration-none w-25 d-none" id="signIn" href="login.html">Sign in</a>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/system.js"></script>
+  </body>
+</html>
